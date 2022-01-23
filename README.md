@@ -50,6 +50,16 @@ server:
       - "cbegkpikakpajcaoblfkeindhhikpfmd"
 ```
 
+- Or, in your docker-compose.yml Update this Setup
+
+```yaml
+environment:
+       GOTIFY_SERVER_CORS_ALLOWORIGINS: "- \"chrome-extension://cbegkpikakpajcaoblfkeindhhikpfmd\""
+       GOTIFY_SERVER_CORS_ALLOWHEADERS: "- \"Authorization\"\n- \"content-type\""
+       GOTIFY_SERVER_CORS_ALLOWMETHODS: "- \"GET\"\n- \"POST\"\n- \"OPTIONS\"\n- \"DELETE\""
+       GOTIFY_SERVER_STREAM_ALLOWEDORIGINS: "- \"cbegkpikakpajcaoblfkeindhhikpfmd\""
+```
+
 ## Features
 
 - Send Custom Push Notification
